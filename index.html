@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO WEB</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        
+            
+                
+                <nav>
+                    <img src="logo.png" width="110px" height="70px" class="logo">
+                    <ul>
+                        
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contacts">Contact Me</a></li>
+                        
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    
+                    <h1>Hi, I'm <span> Ananya</span></h1>
+                    <p>Developer ,Programmer</p>
+                    
+                </div>
+
+    
+         </div>   
+            
+        
+        
+    </div>
+    <!-------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="me.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a first year student at Govt. Model Engineering<br>college
+                    doing major in Computer Science.<br>I am passionate about development
+                and<br> programming:).I enjoy building projects.<br>I look forward to participate
+            in hackathons <br>and join various clubs at my college. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------skills----->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <h2>Technologies</h2>
+                    <p>
+                    <img src="html.jpeg" width="130px" height="130px"><br>HTML</p>
+                    <p><img src="css.jpeg" width="130px" height="130px"><br>CSS</p>
+                </div>
+                <div>
+                    <h2> Languages</h2>
+                    <p><img src="cpp.jpeg" width="130px" height="130px"><br>C++</p>
+                    <p><img src="pyhton.jpeg" width="130px" height="130px"><br>PYTHON</p>
+                </div>
+                <div>
+                    <h2>Tools</h2>
+                    <p><img src="github.jpeg" width="130px" height="130x"><br>GITHUB</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------education-->
+    <div id="education">
+        <div class="container">
+            <h1 class="sub-title">Education</h1>
+            <div class="list">
+                <div class="edu">
+                    <img src="school.png">
+                    
+                        <h3>My School</h3>
+                        <p>I did my primary and secondary education from christ school<br>
+                        and passed 10th grade with 94% and 12th grade with 97.8%. </p>
+                    
+                </div>
+                 <div class="edu">
+                    <img src="mycollege.png" height="270px">
+                    
+                        <h3>My College</h3>
+                        <p>I am currently pursuing BTech from MEC,<br> and shall pass
+                            out in 2026.
+                        </p>
+                    
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-------------contacts-->
+    <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>ananyanaran@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9495413747</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/ananya_puthiyaveetil?igshid=ZDdkNTZiNTM"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ananya-p-7894a4256"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.github.com/ANANYA00P2004"><i class="fab fa-github"></i></a>
+                        
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet"s>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg">Message Sent Successfully</span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright"><p>copyright  @ ananya</p></div>
+    </div>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzRiH_dDQT3nSbgpQtKogReOE7zoI66d5nLt9YaLkzJWSjxt7GBrl25ZjZKIMSImHQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+         } )
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
