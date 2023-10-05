@@ -1,8 +1,10 @@
 *{
     margin:0;
     padding:0;
-    font-family: 'Poppins', sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
+    
+    
 }
 html{
     scroll-behavior: smooth;
@@ -46,7 +48,7 @@ nav ul li a::after{
     content:'' ;
     width:0;
     height:3px;
-    background: rgb(226, 43, 174);
+    background: rgb(239, 50, 50);
     position:absolute;
     left:0;
     bottom:-6px;
@@ -66,7 +68,8 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color:rgb(226, 43, 174);
+    color:rgb(239, 50, 50);
+    
 }
 /*--------about------*/
 #about{
@@ -88,6 +91,12 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
+.about-col-2 p{
+    font-size: larger;
+    align-items: center;
+    text-align: justify;
+}
+
 .sub-title{
     font-size: 60px;
     font-weight: 600;
@@ -103,8 +112,11 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit,minmax( 250px , 1fr ));
     grid-gap:40px;
     margin-top:50px;
+    
 
-
+}
+.skills-list img{
+    border-radius: 20px;
 }
 .skills-list div {
     background: #262622;
@@ -119,7 +131,7 @@ nav ul li a:hover::after{
     margin-border:15px;
 }
 .skills-list div:hover{
-    background:rgb(226, 43, 177);
+    background:rgb(229, 79, 79);
     transform: translateY(-10px);
 }
 /*---------education---------*/
@@ -138,22 +150,30 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position:relative;
     overflow:hidden;
+    font-size: 20px;
+   
 
+}
+.edu p{
+    margin:20px;
 }
 .edu img{
     width:100%;
-    border-radius: 10px;
+    border-radius: 30px;
     display:block;
+    padding: 20px;
     transition: transform 0.5s;
+
 }
 
     
 .edu h3{
     font-weight: 500;
-    margin-bottom: 20px;
+    margin: 20px;
+
 }
 .edu:hover{
-    background:rgb(226, 43, 177) ;
+    background: rgb(229, 79, 79);
     transition: translate(-10px);
 }
 /*----------contact------------*/
@@ -206,7 +226,7 @@ form .btn{
     margin-top:20px;
     cursor: pointer;
     display:inline-block;
-    background: rgb(226, 43, 177);
+    background:rgb(239, 50, 50);
 }
 .copyright{
     width:100%;
@@ -221,6 +241,4 @@ form .btn{
     margin-top: 20px;
     display:block;
 }
-.container{
-    background-image: url(background.jpeg);
-}
+
